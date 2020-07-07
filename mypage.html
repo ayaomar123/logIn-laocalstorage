@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="rel" href="index.html">
+    <script src="toSignIn.js" ></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        you have Enterd SuceesFully
+    </h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, numquam iure distinctio unde, neque consequuntur tempore earum voluptatem suscipit quasi illo placeat harum molestiae nesciunt temporibus quod animi ea odit.
+    </p>
+    <br>
+    <form action="index.html" method="GET">
+        <button id="signOut" >Sign out</button>
+    </form>
+    <script>
+        const signOutBtn = document.getElementById('signOut');
+        signOutBtn.addEventListener('click',()=>{
+            location.href = 'index.html';
+            localStorage.clear();
+            //localStorage.clear();
+        });
+        
+    </script>
+  
+</body>
+</html>
